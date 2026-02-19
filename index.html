@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul Algoritma & Pemrograman Python | Kunci Jawaban Terproteksi</title>
+    <title>Modul Algoritma & Pemrograman Python | Belajar dengan Soal Interaktif</title>
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -130,9 +130,6 @@
             border: 1px solid #10b981;
             display: none;
         }
-        .jawaban p {
-            margin-bottom: 0.5rem;
-        }
         .btn-jawaban {
             background: #10b981;
             color: white;
@@ -143,9 +140,11 @@
             cursor: pointer;
             margin-top: 0.8rem;
             transition: 0.2s;
+            border: 1px solid #0d9e6e;
         }
         .btn-jawaban:hover {
             background: #0d9e6e;
+            transform: scale(1.02);
         }
         .insight {
             background: #eef2fb;
@@ -198,6 +197,7 @@
             padding: 1.2rem 1.5rem;
             border-radius: 60px;
             margin: 2rem 0;
+            justify-content: center;
         }
         .nav-pills a {
             background: white;
@@ -227,13 +227,6 @@
             padding: 1.5rem;
             margin: 1.5rem 0;
         }
-        .password-section {
-            text-align: center;
-            margin: 2rem 0;
-            padding: 1rem;
-            background: #e9ebf0;
-            border-radius: 60px;
-        }
     </style>
 </head>
 <body>
@@ -246,21 +239,18 @@
             <p style="font-size: 1.5rem;">“Karena Tuhanlah yang memberikan hikmat, dari mulut-Nya datang pengetahuan dan kepandaian”</p>
             <p>– Amsal 2:6 –</p>
         </div>
-        <div class="nav-pills" style="justify-content: center;">
+        <div class="nav-pills">
             <a href="#bab1">Bab 1 Algoritma</a>
             <a href="#bab2">Bab 2 Dasar Python</a>
             <a href="#bab3">Bab 3 Percabangan</a>
             <a href="#bab4">Bab 4 Perulangan</a>
-            <a href="#bab5">Bab 5 List & Fungsi</a>
-            <a href="#bab6">Bab 6 Proyek</a>
-        </div>
-        <div class="password-section">
-            <button id="unlockButton" class="btn"><i class="fas fa-lock"></i> Buka Kunci Jawaban (Password: davinci@@)</button>
-            <p id="passwordStatus" style="margin-top: 0.5rem; color: #2563eb;"></p>
+            <a href="#bab5">Bab 5 Fungsi</a>
+            <a href="#bab6">Bab 6 Proyek Nilai</a>
+            <a href="#bab7">Bab 7 Array (List)</a>
         </div>
     </div>
 
-    <!-- Bab 1: Algoritma (ringkas) -->
+    <!-- BAB 1: ALGORITMA -->
     <section id="bab1">
         <h2>Bab 1: Algoritma – Kerangka Berpikir Komputer</h2>
         <p><strong>Algoritma</strong> adalah urutan langkah logis untuk menyelesaikan masalah. Ibarat resep masakan: tanpa resep, koki bisa salah. Tanpa algoritma, program bisa kacau.</p>
@@ -273,7 +263,7 @@
 6. Selesai</code></pre>
         <p>Nanti kita akan terjemahkan ke Python. Fokus kita di modul ini adalah <strong>pemrograman Python</strong>, tapi selalu ingat algoritma di belakangnya.</p>
 
-        <div class="soal">
+        <div class="soal" id="soal1">
             <h4><i class="fas fa-pencil-alt"></i> Soal 1.1</h4>
             <p>Buat algoritma untuk:</p>
             <ol>
@@ -281,6 +271,7 @@
                 <li>Menghitung rata-rata tiga nilai ujian.</li>
                 <li>Menentukan apakah suatu tahun adalah tahun kabisat.</li>
             </ol>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab1')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab1">
                 <p><strong>Jawaban:</strong></p>
                 <p>1. Algoritma mencari bilangan terbesar dari tiga angka:<br>
@@ -311,7 +302,7 @@
         </div>
     </section>
 
-    <!-- Bab 2: Dasar Python - sangat detail -->
+    <!-- BAB 2: DASAR PYTHON -->
     <section id="bab2">
         <h2>Bab 2: Fondasi Python – Variabel, Tipe Data, Input/Output, Operator</h2>
         <p>Kita akan menggunakan <strong>Google Colab</strong> sebagai lingkungan coding. Buka <a href="https://colab.research.google.com" target="_blank">colab.research.google.com</a>, buat notebook baru. Setiap sel bisa diisi kode. Tekan <strong>Shift+Enter</strong> untuk menjalankan.</p>
@@ -473,9 +464,8 @@ print(c)</code></pre>
         </div>
 
         <h3>2.4 Latihan Soal Terintegrasi (Input, Proses, Output)</h3>
-        <p>Sekarang kita coba membuat program-program kecil yang menggabungkan semua konsep.</p>
 
-        <div class="soal">
+        <div class="soal" id="soal2-1">
             <h4><i class="fas fa-puzzle-piece"></i> Soal 2.1 – Menghitung Luas dan Keliling Persegi Panjang</h4>
             <p>Buat program yang meminta panjang dan lebar (float), lalu menampilkan luas dan keliling. Gunakan f-string untuk output rapi.</p>
             <p><strong>Contoh eksekusi:</strong></p>
@@ -483,6 +473,7 @@ print(c)</code></pre>
 Masukkan lebar: 3
 Luas = 16.5
 Keliling = 17.0</code></pre>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab2-1')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab2-1">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>p = float(input("Masukkan panjang: "))
@@ -494,9 +485,10 @@ print(f"Keliling = {keliling}")</code></pre>
             </div>
         </div>
 
-        <div class="soal">
+        <div class="soal" id="soal2-2">
             <h4><i class="fas fa-puzzle-piece"></i> Soal 2.2 – Konversi Suhu</h4>
             <p>Buat program konversi suhu dari Celcius ke Fahrenheit, Reamur, dan Kelvin. Rumus: F = C*9/5+32, R = C*4/5, K = C+273.15. Minta input Celcius, lalu tampilkan ketiganya.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab2-2')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab2-2">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>C = float(input("Masukkan suhu Celcius: "))
@@ -509,9 +501,10 @@ print(f"{C}°C = {K}K")</code></pre>
             </div>
         </div>
 
-        <div class="soal">
+        <div class="soal" id="soal2-3">
             <h4><i class="fas fa-puzzle-piece"></i> Soal 2.3 – Menghitung Rata-rata</h4>
             <p>Minta tiga nilai ujian (bisa desimal), lalu hitung rata-rata dan tampilkan dengan dua angka di belakang koma. Gunakan <code>:.2f</code> dalam f-string.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab2-3')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab2-3">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>a = float(input("Nilai 1: "))
@@ -522,9 +515,10 @@ print(f"Rata-rata = {rata:.2f}")</code></pre>
             </div>
         </div>
 
-        <div class="soal">
+        <div class="soal" id="soal2-4">
             <h4><i class="fas fa-puzzle-piece"></i> Soal 2.4 – Menukar Nilai Dua Variabel</h4>
             <p>Minta dua angka (misal a dan b). Tukar nilainya, lalu tampilkan setelah ditukar. Lakukan dengan dua cara: menggunakan variabel sementara, dan tanpa variabel sementara (hanya dengan operator aritmatika).</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab2-4')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab2-4">
                 <p><strong>Jawaban:</strong></p>
                 <p>Cara 1 (dengan variabel sementara):</p>
@@ -544,9 +538,10 @@ print(f"Setelah ditukar: a = {a}, b = {b}")</code></pre>
             </div>
         </div>
 
-        <div class="soal">
+        <div class="soal" id="soal2-5">
             <h4><i class="fas fa-puzzle-piece"></i> Soal 2.5 – Menghitung Diskon</h4>
             <p>Minta total belanja. Jika total > 100000, beri diskon 10% dan tampilkan total setelah diskon. Jika tidak, tampilkan total biasa.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab2-5')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab2-5">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>total = float(input("Total belanja: Rp "))
@@ -558,7 +553,7 @@ print(f"Total yang harus dibayar: Rp {total:.2f}")</code></pre>
         </div>
     </section>
 
-    <!-- Bab 3: Percabangan (lebih detail) -->
+    <!-- BAB 3: PERCABANGAN -->
     <section id="bab3">
         <h2>Bab 3: Percabangan – Membuat Keputusan</h2>
         <p>Dengan <code>if</code>, <code>elif</code>, <code>else</code>, program dapat memilih tindakan berdasarkan kondisi.</p>
@@ -637,9 +632,11 @@ print(f"Harga tiket: Rp{int(harga)}")</code></pre>
         </div>
 
         <h3>3.6 Latihan Soal Percabangan</h3>
-        <div class="soal">
+
+        <div class="soal" id="soal3-1">
             <h4><i class="fas fa-code-branch"></i> Soal 3.1 – Kalkulator Sederhana</h4>
             <p>Buat program kalkulator yang menerima dua angka dan satu operator (+, -, *, /). Gunakan if-elif untuk memilih operasi. Jika operator tidak dikenal, tampilkan pesan error. (Gunakan input bertahap atau satu baris).</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab3-1')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab3-1">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>a = float(input("Angka pertama: "))
@@ -664,9 +661,10 @@ print("Hasil:", hasil)</code></pre>
             </div>
         </div>
 
-        <div class="soal">
+        <div class="soal" id="soal3-2">
             <h4><i class="fas fa-code-branch"></i> Soal 3.2 – Tahun Kabisat</h4>
             <p>Tahun kabisat adalah tahun yang habis dibagi 400, atau habis dibagi 4 tetapi tidak habis dibagi 100. Buat program yang meminta tahun dan menentukan apakah tahun tersebut kabisat.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab3-2')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab3-2">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>tahun = int(input("Masukkan tahun: "))
@@ -686,7 +684,7 @@ else:
             </div>
         </div>
 
-        <div class="soal">
+        <div class="soal" id="soal3-3">
             <h4><i class="fas fa-code-branch"></i> Soal 3.3 – Indeks Massa Tubuh (IMT)</h4>
             <p>Rumus IMT = berat(kg) / (tinggi(m) ** 2). Minta berat dan tinggi, hitung IMT, lalu tentukan kategori:</p>
             <ul>
@@ -695,6 +693,7 @@ else:
                 <li>Berlebih: 25 - 29.9</li>
                 <li>Obesitas: >= 30</li>
             </ul>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab3-3')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab3-3">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>berat = float(input("Berat (kg): "))
@@ -713,7 +712,7 @@ print(f"IMT = {imt:.2f}, kategori: {kategori}")</code></pre>
         </div>
     </section>
 
-    <!-- Bab 4: Perulangan (ringkas namun tetap jelas) -->
+    <!-- BAB 4: PERULANGAN -->
     <section id="bab4">
         <h2>Bab 4: Perulangan – Melakukan Pekerjaan Berulang</h2>
         <h3>4.1 While Loop</h3>
@@ -749,9 +748,11 @@ for i in range(1,11):
     print(i)   # hanya ganjil</code></pre>
 
         <h3>4.4 Latihan Soal Perulangan</h3>
-        <div class="soal">
+
+        <div class="soal" id="soal4-1">
             <h4><i class="fas fa-redo-alt"></i> Soal 4.1 – Jumlah Deret</h4>
             <p>Minta n dari user, lalu hitung 1+2+...+n. Tampilkan hasil.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab4-1')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab4-1">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>n = int(input("Masukkan n: "))
@@ -762,13 +763,14 @@ print(f"Jumlah 1 sampai {n} = {total}")</code></pre>
             </div>
         </div>
 
-        <div class="soal">
+        <div class="soal" id="soal4-2">
             <h4><i class="fas fa-redo-alt"></i> Soal 4.2 – Pola Bintang</h4>
             <p>Cetak segitiga siku-siku dengan tinggi sesuai input:</p>
             <pre>*
 **
 ***
 ****</pre>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab4-2')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab4-2">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>tinggi = int(input("Tinggi segitiga: "))
@@ -777,9 +779,10 @@ for i in range(1, tinggi+1):
             </div>
         </div>
 
-        <div class="soal">
+        <div class="soal" id="soal4-3">
             <h4><i class="fas fa-redo-alt"></i> Soal 4.3 – Tebak Angka</h4>
             <p>Program memilih angka acak 1-100. User menebak, diberi petunjuk "terlalu kecil/besar" sampai benar. Tampilkan jumlah tebakan.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab4-3')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab4-3">
                 <p><strong>Jawaban:</strong></p>
                 <pre><code>import random
@@ -798,22 +801,9 @@ print(f"Selamat! Tebakan benar dalam {percobaan} kali.")</code></pre>
         </div>
     </section>
 
-    <!-- Bab 5: List dan Fungsi (dasar) -->
+    <!-- BAB 5: FUNGSI -->
     <section id="bab5">
-        <h2>Bab 5: List dan Fungsi – Mengelola Banyak Data</h2>
-        <h3>5.1 List</h3>
-        <p>List adalah kumpulan item dalam satu variabel.</p>
-        <pre><code>buah = ["apel", "mangga", "jeruk"]
-print(buah[0])       # apel
-buah.append("durian") # tambah
-buah.remove("mangga") # hapus
-for b in buah:
-    print(b)
-
-# List bisa berisi campuran tipe data
-campur = ["teks", 123, True, 3.14]</code></pre>
-
-        <h3>5.2 Fungsi</h3>
+        <h2>Bab 5: Fungsi – Membuat Blok Kode Sendiri</h2>
         <p>Fungsi membungkus kode agar bisa dipakai ulang.</p>
         <pre><code>def sapa(nama):
     """Fungsi untuk menyapa"""
@@ -825,97 +815,54 @@ def luas_lingkaran(r):
 sapa("Budi")
 print(luas_lingkaran(7))</code></pre>
 
-        <h3>5.3 Latihan Soal List & Fungsi</h3>
-        <div class="soal">
-            <h4><i class="fas fa-list"></i> Soal 5.1 – Daftar Belanja</h4>
-            <p>Buat program daftar belanja dengan menu: tambah item, hapus item, tampilkan daftar, keluar. Gunakan list dan fungsi untuk setiap opsi.</p>
+        <h3>5.1 Latihan Soal Fungsi</h3>
+
+        <div class="soal" id="soal5-1">
+            <h4><i class="fas fa-code"></i> Soal 5.1 – Fungsi Luas Persegi</h4>
+            <p>Buat fungsi <code>luas_persegi(sisi)</code> yang mengembalikan luas persegi. Panggil fungsi tersebut dengan sisi=5 dan sisi=7, lalu tampilkan hasilnya.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab5-1')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab5-1">
                 <p><strong>Jawaban:</strong></p>
-                <pre><code>belanja = []
+                <pre><code>def luas_persegi(sisi):
+    return sisi * sisi
 
-def tambah():
-    item = input("Item: ")
-    belanja.append(item)
-    print(f"{item} ditambahkan.")
-
-def hapus():
-    item = input("Item yang dihapus: ")
-    if item in belanja:
-        belanja.remove(item)
-        print(f"{item} dihapus.")
-    else:
-        print("Item tidak ditemukan.")
-
-def tampil():
-    if belanja:
-        print("Daftar belanja:")
-        for i, item in enumerate(belanja, 1):
-            print(f"{i}. {item}")
-    else:
-        print("Daftar kosong.")
-
-def menu():
-    while True:
-        print("\n1. Tambah\n2. Hapus\n3. Tampilkan\n4. Keluar")
-        pilih = input("Pilih: ")
-        if pilih == '1':
-            tambah()
-        elif pilih == '2':
-            hapus()
-        elif pilih == '3':
-            tampil()
-        elif pilih == '4':
-            break
-        else:
-            print("Pilihan salah.")
-
-menu()</code></pre>
+print("Luas persegi sisi 5 =", luas_persegi(5))
+print("Luas persegi sisi 7 =", luas_persegi(7))</code></pre>
             </div>
         </div>
 
-        <div class="soal">
-            <h4><i class="fas fa-list"></i> Soal 5.2 – Fungsi Matematika</h4>
-            <p>Buat fungsi untuk menghitung luas persegi, persegi panjang, segitiga. Panggil dalam program utama dengan pilihan menu.</p>
+        <div class="soal" id="soal5-2">
+            <h4><i class="fas fa-code"></i> Soal 5.2 – Fungsi dengan Parameter Default</h4>
+            <p>Buat fungsi <code>sapa_user(nama, pesan="Selamat belajar")</code> yang mencetak "Halo [nama], [pesan]!". Panggil dengan dua cara: hanya nama, dan dengan nama + pesan berbeda.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab5-2')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab5-2">
                 <p><strong>Jawaban:</strong></p>
-                <pre><code>def luas_persegi(s):
-    return s * s
+                <pre><code>def sapa_user(nama, pesan="Selamat belajar"):
+    print(f"Halo {nama}, {pesan}!")
 
-def luas_persegi_panjang(p, l):
-    return p * l
+sapa_user("Dewi")
+sapa_user("Budi", "semangat ya")</code></pre>
+            </div>
+        </div>
 
-def luas_segitiga(a, t):
-    return 0.5 * a * t
+        <div class="soal" id="soal5-3">
+            <h4><i class="fas fa-code"></i> Soal 5.3 – Fungsi Menghitung Diskon</h4>
+            <p>Buat fungsi <code>hitung_diskon(total, persen)</code> yang mengembalikan total setelah diskon. Minta input total dan persen dari user, lalu panggil fungsi dan tampilkan hasilnya.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab5-3')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
+            <div class="jawaban" id="jawab5-3">
+                <p><strong>Jawaban:</strong></p>
+                <pre><code>def hitung_diskon(total, persen):
+    return total * (1 - persen/100)
 
-def menu():
-    while True:
-        print("\n1. Luas Persegi")
-        print("2. Luas Persegi Panjang")
-        print("3. Luas Segitiga")
-        print("4. Keluar")
-        p = input("Pilih: ")
-        if p == '1':
-            s = float(input("Sisi: "))
-            print("Luas =", luas_persegi(s))
-        elif p == '2':
-            p = float(input("Panjang: "))
-            l = float(input("Lebar: "))
-            print("Luas =", luas_persegi_panjang(p, l))
-        elif p == '3':
-            a = float(input("Alas: "))
-            t = float(input("Tinggi: "))
-            print("Luas =", luas_segitiga(a, t))
-        elif p == '4':
-            break
-        else:
-            print("Pilihan salah.")
-
-menu()</code></pre>
+total = float(input("Total belanja: "))
+persen = float(input("Persen diskon: "))
+akhir = hitung_diskon(total, persen)
+print(f"Total setelah diskon: Rp{akhir:.2f}")</code></pre>
             </div>
         </div>
     </section>
 
-    <!-- Bab 6: Proyek Akhir – Aplikasi Nilai Siswa (dengan list of dict) -->
+    <!-- BAB 6: PROYEK NILAI SISWA (sudah ada di modul sebelumnya) -->
     <section id="bab6">
         <h2>Bab 6: Proyek Akhir – Aplikasi Pengelolaan Nilai Siswa</h2>
         <p>Program ini akan menyimpan data siswa (nama, nilai matematika, ipa, inggris) dalam list of dictionaries. Fitur: tambah, tampilkan semua, cari, dan nilai tertinggi.</p>
@@ -972,9 +919,10 @@ def menu():
 
 if __name__ == "__main__":
     menu()</code></pre>
-        <div class="soal">
+        <div class="soal" id="soal6">
             <h4><i class="fas fa-rocket"></i> Tugas Proyek</h4>
             <p>Kembangkan aplikasi di atas dengan menambahkan fitur: ubah data, hapus data, dan simpan/load data ke file teks.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab6')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
             <div class="jawaban" id="jawab6">
                 <p><strong>Jawaban (fitur tambahan):</strong></p>
                 <p>Fitur ubah dan hapus dapat ditambahkan dengan mudah. Untuk penyimpanan file, gunakan modul pickle atau json. Berikut contoh sederhana penyimpanan ke file json:</p>
@@ -997,6 +945,397 @@ def muat():
         </div>
     </section>
 
+    <!-- BAB 7: ARRAY (LIST) -->
+    <section id="bab7">
+        <h2>Bab 7: Array (List) – Menyimpan Banyak Data dalam Satu Variabel</h2>
+        
+        <div class="explanation">
+            <p><strong>Array</strong> dalam Python disebut <strong>list</strong>. List adalah struktur data yang dapat menyimpan banyak nilai (elemen) dalam satu variabel. Elemen-elemen dalam list dapat diakses menggunakan indeks (nomor urut), dan list bersifat <em>mutable</em> (dapat diubah).</p>
+        </div>
+
+        <h3>7.1 Membuat List</h3>
+        <p>List dibuat dengan tanda kurung siku <code>[]</code> dan elemen dipisahkan dengan koma.</p>
+        <pre><code># List kosong
+list_kosong = []
+
+# List dengan beberapa elemen
+buah = ["apel", "mangga", "jeruk", "durian"]
+angka = [10, 20, 30, 40, 50]
+campuran = ["teks", 123, True, 3.14]  # list bisa berisi campuran tipe data
+
+print(buah)
+print(angka)
+print(campuran)</code></pre>
+
+        <h3>7.2 Mengakses Elemen List</h3>
+        <p>Indeks dimulai dari <strong>0</strong> untuk elemen pertama. Indeks negatif dimulai dari -1 untuk elemen terakhir.</p>
+        <pre><code>buah = ["apel", "mangga", "jeruk", "durian"]
+print(buah[0])    # apel
+print(buah[2])    # jeruk
+print(buah[-1])   # durian (elemen terakhir)
+print(buah[-2])   # jeruk (elemen kedua dari belakang)</code></pre>
+
+        <h3>7.3 Mengubah Nilai Elemen</h3>
+        <p>Karena list bersifat mutable, kita bisa mengubah nilai elemen tertentu.</p>
+        <pre><code>buah = ["apel", "mangga", "jeruk", "durian"]
+buah[1] = "anggur"   # mengubah mangga menjadi anggur
+print(buah)          # ['apel', 'anggur', 'jeruk', 'durian']</code></pre>
+
+        <h3>7.4 Operasi Dasar List</h3>
+        
+        <h4>Menambahkan Elemen</h4>
+        <ul>
+            <li><code>append(x)</code> : menambahkan elemen x di akhir list</li>
+            <li><code>insert(i, x)</code> : menyisipkan elemen x pada posisi i</li>
+            <li><code>extend(iterable)</code> : menambahkan semua elemen dari iterable (misal list lain) ke akhir list</li>
+        </ul>
+        <pre><code>buah = ["apel", "mangga"]
+buah.append("jeruk")        # ['apel', 'mangga', 'jeruk']
+buah.insert(1, "anggur")     # ['apel', 'anggur', 'mangga', 'jeruk']
+buah.extend(["durian", "nanas"])  # ['apel', 'anggur', 'mangga', 'jeruk', 'durian', 'nanas']
+print(buah)</code></pre>
+
+        <h4>Menghapus Elemen</h4>
+        <ul>
+            <li><code>remove(x)</code> : menghapus elemen pertama yang bernilai x</li>
+            <li><code>pop(i)</code> : menghapus elemen pada indeks i (jika i tidak diberikan, hapus elemen terakhir) dan mengembalikan nilai yang dihapus</li>
+            <li><code>clear()</code> : menghapus semua elemen</li>
+            <li><code>del list[i]</code> : menghapus elemen pada indeks i</li>
+        </ul>
+        <pre><code>buah = ["apel", "mangga", "jeruk", "durian", "mangga"]
+buah.remove("mangga")        # menghapus mangga pertama -> ['apel', 'jeruk', 'durian', 'mangga']
+buah.pop(2)                  # menghapus elemen indeks 2 (durian) -> ['apel', 'jeruk', 'mangga']
+buah.pop()                   # menghapus elemen terakhir (mangga) -> ['apel', 'jeruk']
+del buah[0]                  # menghapus elemen pertama (apel) -> ['jeruk']
+buah.clear()                 # [] (kosong)</code></pre>
+
+        <h4>Mencari Elemen</h4>
+        <ul>
+            <li><code>index(x)</code> : mengembalikan indeks pertama dari elemen x (error jika tidak ditemukan)</li>
+            <li><code>count(x)</code> : mengembalikan jumlah kemunculan x</li>
+            <li><code>in</code> : operator untuk mengecek apakah suatu nilai ada dalam list</li>
+        </ul>
+        <pre><code>buah = ["apel", "mangga", "jeruk", "mangga"]
+print(buah.index("mangga"))    # 1
+print(buah.count("mangga"))    # 2
+print("apel" in buah)          # True
+print("durian" in buah)        # False</code></pre>
+
+        <h4>Mengurutkan dan Membalik</h4>
+        <ul>
+            <li><code>sort()</code> : mengurutkan list secara ascending</li>
+            <li><code>reverse()</code> : membalik urutan list</li>
+            <li><code>sorted(list)</code> : fungsi bawaan yang mengembalikan list baru yang sudah terurut</li>
+        </ul>
+        <pre><code>angka = [5, 2, 8, 1, 9]
+angka.sort()                 # [1, 2, 5, 8, 9]
+print(angka)
+
+angka.reverse()              # [9, 8, 5, 2, 1]
+print(angka)
+
+# Tanpa mengubah list asli
+angka2 = [3, 1, 4, 2]
+print(sorted(angka2))        # [1, 2, 3, 4]
+print(angka2)                # masih [3, 1, 4, 2] (tidak berubah)</code></pre>
+
+        <h4>Menyalin List</h4>
+        <p>Perhatikan bahwa assignment biasa (<code>list2 = list1</code>) tidak membuat salinan baru, hanya referensi. Gunakan <code>copy()</code> atau <code>list[:]</code> untuk menyalin.</p>
+        <pre><code>list1 = [1, 2, 3]
+list2 = list1          # ini bukan salinan, hanya referensi
+list2.append(4)
+print(list1)           # [1, 2, 3, 4] (ikut berubah)
+
+# Cara benar menyalin
+list3 = list1.copy()
+list4 = list1[:]
+list3.append(5)
+print(list1)           # [1, 2, 3, 4] (tidak berubah)
+print(list3)           # [1, 2, 3, 4, 5]</code></pre>
+
+        <h3>7.5 List Comprehension</h3>
+        <p>Cara ringkas untuk membuat list baru berdasarkan list yang sudah ada.</p>
+        <pre><code># Membuat list kuadrat dari 1-5
+kuadrat = [x**2 for x in range(1, 6)]
+print(kuadrat)        # [1, 4, 9, 16, 25]
+
+# Hanya bilangan genap dari 1-10
+genap = [x for x in range(1, 11) if x % 2 == 0]
+print(genap)          # [2, 4, 6, 8, 10]
+
+# Mengubah huruf menjadi kapital
+buah = ["apel", "mangga", "jeruk"]
+buah_kapital = [b.upper() for b in buah]
+print(buah_kapital)   # ['APEL', 'MANGGA', 'JERUK']</code></pre>
+
+        <h3>7.6 Iterasi List dengan Loop</h3>
+        <pre><code>buah = ["apel", "mangga", "jeruk"]
+
+# Cara 1: for langsung
+for b in buah:
+    print(b)
+
+# Cara 2: menggunakan indeks
+for i in range(len(buah)):
+    print(f"Indeks {i}: {buah[i]}")
+
+# Cara 3: dengan enumerate (dapat indeks dan nilai)
+for i, b in enumerate(buah):
+    print(f"{i}: {b}")</code></pre>
+
+        <h3>7.7 Studi Kasus: Mengelola Daftar Nilai Mahasiswa</h3>
+        <p>Program sederhana untuk menyimpan nilai ujian, menghitung rata-rata, nilai tertinggi, terendah.</p>
+        <pre><code># Input nilai
+nilai = []
+while True:
+    input_nilai = input("Masukkan nilai (atau ketik 'selesai'): ")
+    if input_nilai.lower() == 'selesai':
+        break
+    try:
+        nilai.append(float(input_nilai))
+    except:
+        print("Nilai tidak valid, masukkan angka.")
+
+if nilai:
+    print(f"Daftar nilai: {nilai}")
+    print(f"Rata-rata: {sum(nilai)/len(nilai):.2f}")
+    print(f"Nilai tertinggi: {max(nilai)}")
+    print(f"Nilai terendah: {min(nilai)}")
+else:
+    print("Tidak ada nilai yang dimasukkan.")</code></pre>
+
+        <h3>7.8 Latihan Soal Array (List)</h3>
+
+        <div class="soal" id="soal7-1">
+            <h4><i class="fas fa-list-ol"></i> Soal 7.1 – Dasar List</h4>
+            <p>Buat list berisi 5 nama teman. Kemudian:</p>
+            <ol>
+                <li>Tampilkan nama pertama dan terakhir.</li>
+                <li>Ubah nama ketiga menjadi nama baru.</li>
+                <li>Tambahkan dua nama baru di akhir.</li>
+                <li>Hapus nama kedua.</li>
+                <li>Tampilkan semua nama dengan loop.</li>
+            </ol>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab7-1')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
+            <div class="jawaban" id="jawab7-1">
+                <p><strong>Jawaban:</strong></p>
+                <pre><code>teman = ["Andi", "Budi", "Cici", "Dodi", "Eka"]
+print("Pertama:", teman[0])
+print("Terakhir:", teman[-1])
+
+teman[2] = "Citra"
+print("Setelah ubah indeks 2:", teman)
+
+teman.append("Fani")
+teman.append("Gita")
+print("Setelah tambah:", teman)
+
+teman.pop(1)  # hapus indeks 1 (Budi)
+print("Setelah hapus indeks 1:", teman)
+
+print("Semua teman:")
+for nama in teman:
+    print("-", nama)</code></pre>
+            </div>
+        </div>
+
+        <div class="soal" id="soal7-2">
+            <h4><i class="fas fa-list-ol"></i> Soal 7.2 – Statistik Sederhana</h4>
+            <p>Minta user memasukkan 5 angka (bisa desimal), simpan dalam list. Hitung dan tampilkan:</p>
+            <ul>
+                <li>Jumlah total</li>
+                <li>Rata-rata</li>
+                <li>Nilai terbesar</li>
+                <li>Nilai terkecil</li>
+            </ul>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab7-2')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
+            <div class="jawaban" id="jawab7-2">
+                <p><strong>Jawaban:</strong></p>
+                <pre><code>angka = []
+for i in range(5):
+    n = float(input(f"Masukkan angka ke-{i+1}: "))
+    angka.append(n)
+
+total = sum(angka)
+rata = total / len(angka)
+terbesar = max(angka)
+terkecil = min(angka)
+
+print(f"Angka yang dimasukkan: {angka}")
+print(f"Total: {total}")
+print(f"Rata-rata: {rata:.2f}")
+print(f"Terbesar: {terbesar}")
+print(f"Terkecil: {terkecil}")</code></pre>
+            </div>
+        </div>
+
+        <div class="soal" id="soal7-3">
+            <h4><i class="fas fa-list-ol"></i> Soal 7.3 – Filter Bilangan</h4>
+            <p>Buat program yang meminta user memasukkan 10 angka (boleh acak), lalu buat dua list baru:</p>
+            <ul>
+                <li>List genap (angka yang habis dibagi 2)</li>
+                <li>List ganjil (angka yang tidak habis dibagi 2)</li>
+            </ul>
+            <p>Tampilkan kedua list tersebut.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab7-3')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
+            <div class="jawaban" id="jawab7-3">
+                <p><strong>Jawaban:</strong></p>
+                <pre><code>angka = []
+for i in range(10):
+    n = int(input(f"Masukkan angka ke-{i+1}: "))
+    angka.append(n)
+
+genap = []
+ganjil = []
+for a in angka:
+    if a % 2 == 0:
+        genap.append(a)
+    else:
+        ganjil.append(a)
+
+print(f"Semua angka: {angka}")
+print(f"Angka genap: {genap}")
+print(f"Angka ganjil: {ganjil}")</code></pre>
+            </div>
+        </div>
+
+        <div class="soal" id="soal7-4">
+            <h4><i class="fas fa-list-ol"></i> Soal 7.4 – Menghapus Duplikat</h4>
+            <p>Buat program yang meminta user memasukkan beberapa angka (hingga user mengetik 'selesai'). Kemudian hapus angka-angka yang duplikat (hanya sisakan satu kemunculan pertama). Tampilkan list setelah duplikat dihapus.</p>
+            <p><em>Petunjuk: Gunakan list baru untuk menyimpan angka yang belum pernah muncul.</em></p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab7-4')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
+            <div class="jawaban" id="jawab7-4">
+                <p><strong>Jawaban:</strong></p>
+                <pre><code>angka = []
+while True:
+    input_nilai = input("Masukkan angka (atau 'selesai'): ")
+    if input_nilai.lower() == 'selesai':
+        break
+    try:
+        angka.append(int(input_nilai))
+    except:
+        print("Masukkan angka yang valid.")
+
+print("Angka awal:", angka)
+
+unik = []
+for a in angka:
+    if a not in unik:
+        unik.append(a)
+
+print("Angka setelah duplikat dihapus:", unik)</code></pre>
+            </div>
+        </div>
+
+        <div class="soal" id="soal7-5">
+            <h4><i class="fas fa-list-ol"></i> Soal 7.5 – List Comprehension</h4>
+            <p>Gunakan list comprehension untuk:</p>
+            <ol>
+                <li>Membuat list bilangan kuadrat dari 1 sampai 15.</li>
+                <li>Membuat list bilangan yang habis dibagi 3 antara 1 sampai 50.</li>
+                <li>Dari list ["apel", "mangga", "jeruk", "anggur", "melon"], buat list baru yang berisi nama buah dengan panjang lebih dari 5 huruf.</li>
+            </ol>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab7-5')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
+            <div class="jawaban" id="jawab7-5">
+                <p><strong>Jawaban:</strong></p>
+                <pre><code># 1. Kuadrat 1-15
+kuadrat = [x**2 for x in range(1, 16)]
+print("Kuadrat 1-15:", kuadrat)
+
+# 2. Habis dibagi 3 antara 1-50
+kelipatan3 = [x for x in range(1, 51) if x % 3 == 0]
+print("Kelipatan 3 (1-50):", kelipatan3)
+
+# 3. Buah dengan panjang > 5
+buah = ["apel", "mangga", "jeruk", "anggur", "melon"]
+buah_panjang = [b for b in buah if len(b) > 5]
+print("Buah dengan >5 huruf:", buah_panjang)</code></pre>
+            </div>
+        </div>
+
+        <div class="soal" id="soal7-6">
+            <h4><i class="fas fa-list-ol"></i> Soal 7.6 – Matriks Sederhana (List of Lists)</h4>
+            <p>Buat list 2 dimensi (list di dalam list) yang merepresentasikan matriks 3x3. Minta user mengisi nilai untuk setiap elemen. Kemudian:</p>
+            <ul>
+                <li>Tampilkan matriks dalam format baris dan kolom.</li>
+                <li>Hitung jumlah semua elemen.</li>
+                <li>Tampilkan elemen pada baris 1 kolom 2 (indeks [0][1]) dan baris 3 kolom 3 (indeks [2][2]).</li>
+            </ul>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab7-6')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
+            <div class="jawaban" id="jawab7-6">
+                <p><strong>Jawaban:</strong></p>
+                <pre><code># Inisialisasi matriks 3x3
+matriks = []
+for i in range(3):
+    baris = []
+    for j in range(3):
+        nilai = int(input(f"Masukkan nilai baris {i+1} kolom {j+1}: "))
+        baris.append(nilai)
+    matriks.append(baris)
+
+print("\nMatriks yang dimasukkan:")
+for baris in matriks:
+    for nilai in baris:
+        print(nilai, end="\t")
+    print()
+
+total = 0
+for baris in matriks:
+    total += sum(baris)
+print(f"Jumlah semua elemen: {total}")
+
+print(f"Baris 1 kolom 2: {matriks[0][1]}")
+print(f"Baris 3 kolom 3: {matriks[2][2]}")</code></pre>
+            </div>
+        </div>
+
+        <div class="soal" id="soal7-7">
+            <h4><i class="fas fa-list-ol"></i> Soal 7.7 – Gabungan dengan Fungsi</h4>
+            <p>Buat fungsi berikut:</p>
+            <ul>
+                <li><code>rata_rata(list_angka)</code> : mengembalikan rata-rata</li>
+                <li><code>nilai_maksimal(list_angka)</code> : mengembalikan nilai maks (tanpa max bawaan)</li>
+                <li><code>nilai_minimal(list_angka)</code> : mengembalikan nilai min (tanpa min bawaan)</li>
+            </ul>
+            <p>Kemudian dalam program utama, minta user memasukkan 5 angka, panggil ketiga fungsi tersebut dan tampilkan hasilnya.</p>
+            <button class="btn-jawaban" onclick="bukaJawaban('jawab7-7')"><i class="fas fa-lock"></i> Lihat Jawaban</button>
+            <div class="jawaban" id="jawab7-7">
+                <p><strong>Jawaban:</strong></p>
+                <pre><code>def rata_rata(lst):
+    return sum(lst) / len(lst) if lst else 0
+
+def nilai_maksimal(lst):
+    if not lst:
+        return None
+    maks = lst[0]
+    for n in lst:
+        if n > maks:
+            maks = n
+    return maks
+
+def nilai_minimal(lst):
+    if not lst:
+        return None
+    min = lst[0]
+    for n in lst:
+        if n < min:
+            min = n
+    return min
+
+# Program utama
+angka = []
+for i in range(5):
+    n = float(input(f"Masukkan angka ke-{i+1}: "))
+    angka.append(n)
+
+print(f"Angka: {angka}")
+print(f"Rata-rata: {rata_rata(angka):.2f}")
+print(f"Nilai maksimal: {nilai_maksimal(angka)}")
+print(f"Nilai minimal: {nilai_minimal(angka)}")</code></pre>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>© 2025 MGMP Informatika PPPK PETRA – Modul ini dapat digunakan untuk pembelajaran mandiri.</p>
         <p><i class="fas fa-heart" style="color:#c44545;"></i> Teruslah belajar, Tuhan memberkati.</p>
@@ -1004,27 +1343,22 @@ def muat():
 </div>
 
 <script>
-    // Password protection for answers
-    const correctPassword = "davinci@@";
-    let unlocked = false;
+    // Password protection for individual answers
+    const PASSWORD = "davinci@@";
 
-    document.getElementById('unlockButton').addEventListener('click', function() {
-        if (unlocked) {
-            // Jika sudah terbuka, beri tahu
-            document.getElementById('passwordStatus').innerText = 'Jawaban sudah terbuka.';
-            return;
-        }
-        const password = prompt("Masukkan password untuk membuka kunci jawaban:");
-        if (password === correctPassword) {
-            // Tampilkan semua jawaban
-            const answers = document.querySelectorAll('.jawaban');
-            answers.forEach(ans => ans.style.display = 'block');
-            unlocked = true;
-            document.getElementById('passwordStatus').innerHTML = '<i class="fas fa-unlock"></i> Jawaban terbuka. Selamat belajar!';
+    function bukaJawaban(id) {
+        const password = prompt("Masukkan password untuk melihat jawaban:");
+        if (password === PASSWORD) {
+            const jawaban = document.getElementById(id);
+            if (jawaban) {
+                jawaban.style.display = "block";
+            } else {
+                alert("ID jawaban tidak ditemukan.");
+            }
         } else {
             alert("Password salah!");
         }
-    });
+    }
 </script>
 </body>
 </html>
